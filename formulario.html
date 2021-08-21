@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen">
+    <title>Formulario</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de pessoas</h1>
+        <p id="subtitulo">Complete suas informações</p>
+    </div>
+    
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label> 
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+        </fieldset>
+        
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label ><strong>Qual gerenero você se identifica?</strong></label>
+            <label>
+                <input type="radio" name="genero" value="Masculino" checked>Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="Feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="LGBTQIA+">LGBTQIA+
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="tipo-cadastro"><strong>Qual seu tipo de cadastro?</strong></label>
+            <select id="tipo-cadastro">
+                <option selected disabled value="">Selecione</option>
+                <option>Pessoa fisica</option>
+                <option>Pessoa juridica</option>
+            </select>
+        </div>
+        
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione qual/quais serviço(s) deseja</strong></label><br><br>
+                <input type="checkbox" id="servico1" name="servico1" value="Consultor de imagem">
+                <label for="servico1">Consultor de imagem</label>
+                <input type="checkbox" id="servico2" name="servico2" value="Personal Shopper">
+                <label for="servico2">Personal Shopper</label>
+                <input type="checkbox" id="servico3" name="servico3" value="Designer Gráfico">
+                <label for="servico3">Designer Gráfico</label>
+                <input type="checkbox" id="servico4" name="servico4" value="Professor Orientador">
+                <label for="servico4">Professor Orientador</label>
+                <input type="checkbox" id="servico5" name="servico5" value="Detetive Particular">
+                <label for="servico5">Detetive Particular </label>
+                <input type="checkbox" id="servico6" name="servico6" value="HTML">
+                <label for="servico6">Planejador de Festas</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte-nos o que deseja com o serviço selecionado</strong></label><br>
+            <textarea name="selecao" id="selecao" style="width: 26em;" rows="6"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+
+    </form>
+</body>
+</html>
